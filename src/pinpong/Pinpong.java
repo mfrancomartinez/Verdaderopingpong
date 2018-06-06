@@ -15,6 +15,7 @@ import javax.swing.JFrame;
 public class Pinpong {
 
     public static void main(String[] args) {
+        Conexion conn = new Conexion();
         Ventana ventana = new Ventana();
 
     }
