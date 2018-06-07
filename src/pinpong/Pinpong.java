@@ -15,7 +15,9 @@ public class Pinpong {
     public static void main(String[] args) {
         Conexion conn = new Conexion();
         conn.PrepararBaseDatos();
+        conn.guardarNombre();
         Ventana ventana = new Ventana();
+        conn.recogerNombreTiempo();
 
     }
 }
