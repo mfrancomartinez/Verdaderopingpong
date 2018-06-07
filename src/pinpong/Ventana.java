@@ -7,6 +7,8 @@ package pinpong;
 import javax.swing.JFrame;
 public class Ventana extends JFrame {
 
+    
+
     private final int ANCHO = 800, ALTO = 500;
     private TableroJuego lamina;
     private Hilo hilo;
