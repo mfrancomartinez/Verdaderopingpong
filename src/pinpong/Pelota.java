@@ -39,9 +39,7 @@ public class Pelota {
         if (y > limites.getMaxY()) {
             dy = -dy;
         }
-        if (x < 0) {
-            dx = -dx;
-        }
+
         if (y < 0) {
             dy = -dy;
         }
