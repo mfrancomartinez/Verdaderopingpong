@@ -20,7 +20,7 @@ public class Conexion {
   Connection conexion; 
      Statement sentencia; 
      String nombre;
-     float tiempo;
+     float tiempo = 0;
      String sql;
 
  public void PrepararBaseDatos() { 
@@ -50,10 +50,13 @@ public class Conexion {
         } 
      } 
  
- public void guardarNombreTiempo(){
+ public void guardarNombre(){
      nombre = JOptionPane.showInputDialog("Inserta el nombre de los contrincantes.");
+ }
+ 
+ public void recogerNombreTiempo(){
      
-     sql="insert into Base de datos1(nombre,tiempo) values"+"("+nombre+")"+","+"("+tiempo+")";
+     sql="insert into Base_de_datos(Nombre,Tiempo_de_juego) values"+"("+nombre+","+tiempo+")";
      
      try{
          sentencia.executeUpdate(sql);
